@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simra</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container-principal">
+
+    <nav class="navbar navbar-expand-lg border-bottom">
+
+        <div class="container-fluid">
+
+          <a class="navbar-brand ms-2" href="#"><img src="img/logoSimra.svg" width="180" height="45" alt="Logo"></a>
+
+          <div class="collapse navbar-collapse row-gap-5 justify-content-end" id="navbarNav">
+
+                <ul class="navbar-nav d-flex align-items-center gap-3 fs-5">
+
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="pages/sensores.html">Sensores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ocorrencia.html">Ocorrências</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/abrigosevoluntarios.html">Abrigos e Voluntários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="btn btn-secondary btn-md border-0 rounded">
+                                <i class="fa-regular fa-bell"></i>
+                            </button>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="btn btn-secondary btn-md border-0 rounded-circle">
+                                <i class="fa-regular fa-user"></i>
+                            </button>
+                        </a>
+                    </li>
+        
+                </ul>
+
+          </div>
+          
+        </div>
+    </nav>
+
+
+    <div class="container dashboard mt-5">
+    <h1 class="fw-bold texto-principal">Dashboard</h1>
+    <h2 class="fw-bold fs-3 texto-principal mt-5 mb-4">Alertas ativos</h2>
+
+        <div class="d-flex alerta p-3 shadow rounded">
+            <div>
+              <h5 class="fw-bold mb-2">Alagamento em Morro da Paz</h5>
+              <p class="texto-secundario mb-4">
+                Nível de água aumentando rapidamente. Os moradores devem evacuar a área.
+              </p>
+              <button class="btn btn-secondary btn-md border-0 rounded-pill">Ver detalhes</button>
+            </div>
+            <img src="img/morrodapaz.svg"Alerta de alagamento"
+                 class="ms-auto rounded" style="object-fit: cover;">
+          </div>
+
+        <div class="sensores">
+
+            <h2 class="fw-bold fs-3 texto-principal my-5">Dados dos Sensores</h2>
+
+            <div class="border p-3 rounded">
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th scope="col">Localização</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Leitura</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Reservatório Guarapiranga - Ponto de Captação
+                        </th>
+                        <td>Nível de àgua</td>
+                        <td>85% Capacidade</td>
+                        <td><span class="badge rounded-pill bg-danger px-4 py-2">Crítico</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Av. Comercial, 3030 - Brás, Centro
+                        </th>
+                        <td>Chuva</td>
+                        <td>5mm/hr</td>
+                        <td><span class="badge rounded-pill bg-secondary px-4 py-2">Normal</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Terminal de Cargas Fernão Dias, Vila Medeiros
+                        </th>
+                        <td class="texo-secundario">Chuva</td>
+                        <td>3mm/hr</td>
+                        <td><span class="badge rounded-pill bg-secondary px-4 py-2">Normal</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Córrego do Moinho - Morro Verde, Vila Prudente
+                        </th>
+                        <td>Chuva</td>
+                        <td>15mm/hr</td>
+                        <td><span class="badge rounded-pill bg-warning px-4 py-2">Atenção</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Rua das Flores, Jardim Residencial Paraíso, Zona Sul
+                        </th>
+                        <td class="texo-secundario">Nível de àgua</td>
+                        <td>1.8m</td>
+                        <td><span class="badge rounded-pill bg-secondary px-4 py-2">Normal</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pico do Jaraguá - Antenas de Transmissão
+                        </th>
+                        <td class="texo-secundario">Chuva</td>
+                        <td>12mm/hr</td>
+                        <td><span class="badge rounded-pill bg-warning px-4 py-2">Atenção</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sistema Cantareira - Represa Jaguari (Extremo Norte)</th>
+                        <td class="texo-secundario">Nível de àgua</td>
+                        <td>95% Capacidade</td>
+                        <td><span class="badge rounded-pill bg-danger px-4 py-2">Crítico</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+
+        </div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
